@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "vpc" {
-  cidr_block = "10.180.0.0/16"
+  cidr_block = var.cidr
   tags = {
   Name = "Terraform-VPC"
   }
